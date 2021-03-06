@@ -115,7 +115,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_DEBUG
 
 /* disable print */
-//#define NO_PRINT
+#define NO_PRINT
 
 /* disable action features */
 //#define NO_ACTION_LAYER
@@ -128,5 +128,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_LED_PROCESS_LIMIT 15
 #define RGB_MATRIX_LED_FLUSH_LIMIT 10
 #define RGB_MATRIX_EXTRA_TOG
+
+// Tap Dance enable
+#define TAPPING_TERM 200
 
 #include "config_led.h"
