@@ -50,27 +50,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, \
         NAV_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  \
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,                   KC_RSFT, \
-        OSL(1),  KC_LCTL, KC_LALT,                   KC_SPC,                                       TT(1),   KC_RGUI, KC_APP, KC_RCTL  \
+        OSL(1),  KC_LCTL, KC_LALT,                   KC_SPC,                                       TT(2),   KC_RGUI, KC_APP, KC_RCTL  \
     ),
     [1] = LAYOUT( //NAVIGATION
         KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  \
         _______, _______, _______, _______, _______, _______, KC_END,  KC_PGDN, KC_PGUP, KC_HOME, _______, _______, _______, U_T_AGCR,\
-        _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,           _______, \
-        _______, _______, _______, _______, _______, MD_BOOT, TG_NKRO, KC_VOLD, KC_VOLU, KC_MUTE, _______,                   _______, \
-        _______, _______, _______,                   DBG_FAC,                                    _______, KC_MUTE, _______,  _______ \
+        _______, KC_WHOM, KC_WSCH, KC_WBAK, KC_WREF, KC_WFWD, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,           _______,\
+        _______, _______, _______, _______, _______, MD_BOOT, _______, _______, _______, _______, _______,                    _______,\
+        _______, _______, _______,                   KC_BSPC,                                     _______, KC_MUTE, _______,  _______ \
     ),
     [2] = LAYOUT( //LED CONTROL
         KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  \
-        L_T_ONF, L_PTD,   L_PTP,   L_PTD,   L_BR,    RGB_SAI, KC_END,  KC_PGDN, KC_PGUP, KC_HOME, KC_UP,   _______, _______, U_T_AGCR,\
-        L_T_MD,  L_PSD,   L_BRD,   L_BRI,   L_PSI,   RGB_SAD, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT,KC_DOWN, KC_RGHT,          _______, \
-        L_EDG_M, L_RATIOD,L_EDG_D, L_EDG_I, L_RATIOI,MD_BOOT, KC_MUTE, KC_VOLD, KC_VOLU, KC_VOLD, KC_VOLU,                   _______, \
+        L_T_ONF, L_PTD,   L_PTP,   L_PTD,   L_BR,    RGB_SAI, _______, _______, _______, _______, _______, _______, _______, U_T_AGCR,\
+        L_T_MD,  L_PSD,   L_BRD,   L_BRI,   L_PSI,   RGB_SAD, _______, KC_BRID, KC_BRIU, _______, _______, _______,          _______, \
+        L_EDG_M, L_RATIOD,L_EDG_D, L_EDG_I, L_RATIOI,MD_BOOT, _______, _______, _______, _______, _______,                   _______, \
         _______, _______, _______,                   DBG_TOG,                            KC_MUTE, _______, KC_APP,           _______  \
     ),
 
     /*
     [X] = LAYOUT(
-        _______  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-        _______  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, \
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   _______, \
         _______, _______, _______,                   _______,                            _______, _______, _______,          _______  \
